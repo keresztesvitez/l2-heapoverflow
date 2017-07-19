@@ -22,10 +22,10 @@ import java.util.stream.IntStream;
 public class App {
 
     public static void main(String[] args) {
-        Map<Key, Value> map = new HashMap<>();
-
         while (true) {
+            Map<Key, Value> map = new HashMap<>();
             IntStream.range(1, 100).forEach(i -> map.put(new Key(i), new Value("" + i)));
+            System.out.println(map);
         }
     }
 }
